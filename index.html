@@ -1,196 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <link rel="icon" type="image/x-icon" href="https://seeklogo.com/images/A/adobe-portfolio-logo-BD502F658C-seeklogo.com.png">
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Lobster&family=Lugrasimo&family=Noto+Sans+SC&display=swap" rel="stylesheet">
-<!-- fontawsome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milan Joseph | Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="https://seeklogo.com/images/A/adobe-portfolio-logo-BD502F658C-seeklogo.com.png">
 
-<link rel="stylesheet" href="./index.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Outfit', sans-serif; }
+    body { background: #f9f9f9; color: #333; }
+    .container { width: 90%; margin: 0 auto; max-width: 1200px; }
+    .navbar { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 0; }
+    .navbar img { width: 60px; height: 60px; border-radius: 50%; }
+    ul { list-style: none; display: flex; gap: 1.5rem; }
+    .link { text-decoration: none; color: #333; font-weight: 500; transition: color 0.3s; }
+    .link:hover { color: #007BFF; }
+
+    .title { text-align: center; padding: 5rem 1rem 2rem; }
+    .title h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    .title span { color: #007BFF; }
+    .title p { margin-bottom: 1rem; font-size: 1.1rem; }
+    .download { padding: 0.8rem 1.5rem; background: #007BFF; color: white; text-decoration: none; border-radius: 5px; display: inline-block; }
+
+    .images { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; }
+    .images img { width: 200px; border-radius: 10px; }
+
+    .heading { text-align: center; padding: 3rem 0 1rem; }
+    .heading h2 { font-size: 2rem; }
+    .heading span { color: #666; font-size: 1rem; }
+
+    .about-content, .skill-content { display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; padding: 2rem 0; }
+    .about-image img, .skill-img img { width: 100%; max-width: 300px; border-radius: 10px; }
+    .about-details, .bar-container { flex: 1; }
+
+    .infomn { margin-top: 1.5rem; display: grid; gap: 1rem; }
+    .infobox { display: flex; align-items: center; gap: 1rem; }
+    .infobox i { color: #007BFF; }
+
+    .progress-bar .bar-container { margin-bottom: 1.5rem; }
+    .bar-container h3 { display: flex; justify-content: space-between; margin-bottom: 0.5rem; }
+    .base-bar { height: 10px; background: #ddd; border-radius: 5px; position: relative; }
+    .html-bar, .css-bar, .react-bar, .js-bar { position: absolute; top: 0; left: 0; height: 100%; background: #007BFF; border-radius: 5px; }
+    .html-bar { width: 95%; }
+    .css-bar { width: 90%; }
+    .react-bar { width: 85%; }
+    .js-bar { width: 80%; }
+
+    .icon-set { display: flex; justify-content: center; flex-wrap: wrap; gap: 1.5rem; padding: 2rem 0; }
+    .icon a { font-size: 1.5rem; color: #333; transition: color 0.3s; }
+    .icon a:hover { color: #007BFF; }
+
+    footer { background: #eee; padding: 1rem 0; text-align: center; position: relative; }
+    .up-arrow a { position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); font-size: 1.5rem; color: #007BFF; }
+  </style>
 </head>
 <body>
-    <!-- <h1 style="font-family: 'Lobster', cursive;">Milan joseph</h1> -->
-    <!-- <i class="fa-brands fa-instagram fa-bounce fa-10x"></i> -->
-
-    <div class="container" id="container">
-        <nav class="navbar">
-          <img class="logo" src="./images/WhatsApp Image 2023-07-26 at 19.50.35.jpg"alt="image">  
-        
-        <ul>
-            <li class="listitem"><a class="link" href="#container">HOME</a></li>
-            <li class="listitem"><a class="link" href="#about">ABOUT</a></li>
-            <li class="listitem"><a class="link" href="#skils">SKILL</a></li>
-            <li class="listitem"><a class="link" href="#contact">CONTACT</a></li>
-
-        </ul>
+  <div class="container" id="container">
+    <nav class="navbar">
+      <img class="logo" src="./images/logo.png" alt="logo">
+      <ul>
+        <li class="listitem"><a class="link" href="#container">HOME</a></li>
+        <li class="listitem"><a class="link" href="#about">ABOUT</a></li>
+        <li class="listitem"><a class="link" href="#skills">SKILLS</a></li>
+        <li class="listitem"><a class="link" href="#contact">CONTACT</a></li>
+      </ul>
     </nav>
+
     <section id="home">
-        <div class="title">
-            <h1 class="title-h1">I'm Elizebath <span id="lastname">Mariya</span></h1>
-            <p class="title-p">This is my official portfolio website to describe about my details and works</p>
-            <!-- <a class="download" href="./images/EC207-Logic-circuit-desin.pdf" download>DOWNLOAD CV</a> -->
-            <a class="download" href="https://drive.google.com/file/d/1R3JGRnQPx2im8dvxkMNANnpIA0l_Foyt/view?usp=sharing" target="blank">DOWNLOAD CV</a>
-        </div><br>
-        <div class="images">
-            <img id="shape" src="./images/WhatsApp_Image_2023-07-26_at_13.54.19-removebg-preview.png" alt="shape">
-            <img id="girl" src="./images/WhatsApp_Image_2023-07-26_at_19.50.09-removebg-preview.png" alt="girl">
-        </div>
-
+      <div class="title">
+        <h1>I'm Milan <span>Joseph</span></h1>
+        <p>Welcome to my portfolio — get to know me and my work!</p>
+        <a class="download" href="./images/milanJoseph.pdf" download>Download CV</a>
+      </div>
     </section>
+
     <section id="about">
-        <div class="heading">
-            <h2>About Me</h2>
-            <span>Introduction</span>
+      <div class="heading">
+        <h2>About Me</h2>
+        <span>Introduction</span>
+      </div>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="./images/cropped_image.png" alt="about image">
         </div>
-        <div class="about-content">
-            <div class="about-image">
-                <img src="./images/WhatsApp Image 2023-08-02 at 19.07.59.jpg" alt="image">
-
-            </div>
-            <div class="about-details">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sequi earum dolorem sunt rerum, dicta molestias a quaerat quas, illo provident temporibus ipsum, ad veritatis perspiciatis. Eum veritatis molestiae dolore?
-                </p>
-                <div class="infomn">
-                    <div class="infobox">
-                        <i class="fa-solid fa-user"></i>
-                        <span>Elizebath Mariya</span>
-
-                    </div>
-                    <div class="infobox">
-                        <i class="fa-solid fa-phone"></i>
-                        <span>9539278524</span>
-
-                    </div>
-                    <div class="infobox">
-                        <i class="fa-brands fa-php"></i>
-                        <span>PHP</span>
-
-                    </div>
-                    <div class="infobox">
-                        <i class="fa-solid fa-house"></i>
-                        <span>America</span>
-
-                    </div>
-
-
-
-
-                </div>
-
-            </div>
-
+        <div class="about-details">
+          <p>I'm a full-stack developer with experience in building MEAN and MERN stack applications, passionate about modern web technologies.</p>
+          <div class="infomn">
+            <div class="infobox"><i class="fa-solid fa-user"></i><span>Milan Joseph</span></div>
+            <div class="infobox"><i class="fa-solid fa-phone"></i><span>9544638388</span></div>
+            <div class="infobox"><i class="fa-solid fa-code"></i><span>Typescript, Javascript, NodeJS, NestJS, MongoDB, Angular</span></div>
+            <div class="infobox"><i class="fa-solid fa-location-dot"></i><span>Kochi</span></div>
+          </div>
         </div>
+      </div>
     </section>
-    <section id="skils">
-        <div class="heading">
-            <h2>Skills</h2>
-            <span>My skills</span>
 
+    <section id="skills">
+      <div class="heading">
+        <h2>Skills</h2>
+        <span>My technical level</span>
+      </div>
+      <div class="skills">
+        <div class="progress-bar">
+          <div class="bar-container"><h3><span>HTML</span><span>95%</span></h3><div class="base-bar"><div class="html-bar"></div></div></div>
+          <div class="bar-container"><h3><span>CSS</span><span>90%</span></h3><div class="base-bar"><div class="css-bar"></div></div></div>
+          <div class="bar-container"><h3><span>Angular</span><span>85%</span></h3><div class="base-bar"><div class="react-bar"></div></div></div>
+          <div class="bar-container"><h3><span>JavaScript </span><span>90%</span></h3><div class="base-bar"><div class="js-bar"></div></div></div>
+          <div class="bar-container"><h3><span>NodeJS</span><span>85%</span></h3><div class="base-bar"><div class="react-bar"></div></div></div>
+          <div class="bar-container"><h3><span>Typescript</span><span>90%</span></h3><div class="base-bar"><div class="js-bar"></div></div></div>
         </div>
-        <div class="skill-content">
-            <!-- progress -->
-            <div class="progress-bar">
-                <div class="bar-container">
-                    <h3>html</h3>
-                    <span>95%</span>
-                    <div class="base-bar"></div>
-                    <div class="base-bar html-bar"></div>
-
-                </div>
-                <div class="bar-container">
-                    <h3>css</h3>
-                    <span>88%</span>
-                    <div class="base-bar"></div>
-                    <div class="base-bar css-bar"></div>
-
-                </div>
-                <div class="bar-container">
-                    <h3>react</h3>
-                    <span>89%</span>
-                    <div class="base-bar"></div>
-                    <div class="base-bar react-bar"></div>
-
-                </div>
-                <div class="bar-container">
-                    <h3>js</h3>
-                    <span>85%</span>
-                    <div class="base-bar"></div>
-                    <div class="base-bar js-bar"></div>
-
-                </div>
-
-            </div>
-            <!-- image -->
-            <div class="skill-img">
-                <img src="./images/WhatsApp Image 2023-07-26 at 13.54.21.jpg" alt="image">
-
-            </div>
-
-        </div>
-
+      </div>
     </section>
+
     <section id="contact">
-        <div class="heading">
-            <h2>Contact</h2>
-            <span>My Contact</span>
-            
-
-        </div>
-        <div class="icon-set">
-            <div class="icon">
-                <a href="">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-            </div>
-            <div class="icon">
-                <a href="">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-            </div>
-            <div class="icon">
-                <a href="">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-            </div> 
-            <div class="icon">
-                <a href="">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </div>
-            <div class="icon">
-                <a href="">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            </div>
-            <div class="icon">
-                <a href="">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-            </div>
-            
-             
-            </div>
-        
-
+      <div class="heading">
+        <h2>Contact</h2>
+        <span>Reach me out</span>
+      </div>
+      <div class="icon-set">
+        <div class="icon"><a href="https://www.linkedin.com/in/milan-joseph-03376b293/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+        <div class="icon"><a href="https://github.com/milanjoseph120" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+        <div class="icon"><a href=""><i class="fa-brands fa-whatsapp"></i></a></div>
+        <div class="icon"><a href=""><i class="fa-brands fa-facebook"></i></a></div>
+        <div class="icon"><a href=""><i class="fa-brands fa-instagram"></i></a></div>
+        <div class="icon"><a href=""><i class="fa-brands fa-twitter"></i></a></div>
+      </div>
     </section>
-    <footer >
-        <div class="para">
-           <p >&copy; My Portfolio Design 2023, All Rights Reserved &reg Elizebath Mariya</p></div>
-           <div class="up-arrow">
-            <a href="#container"><i class="fa-solid fa-arrow-up"></i></a>
 
-           </div>
-        
+    <footer>
+      <p>&copy; 2025 Milan Joseph. All rights reserved.</p>
+      <div class="up-arrow">
+        <a href="#container"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
     </footer>
-    </div>
-    
-    
+  </div>
 </body>
 </html>
